@@ -1,0 +1,59 @@
+.dashBoardPage {
+    padding: 3em;
+
+    .white-box {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0.5px 0.5px 2px 1px #eee;
+    }
+
+    .semi-header {
+        background-color: rgba(46, 133, 167, 0.069);
+        text-align: left;
+        font-weight: bold;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.564);
+    }
+
+    .blank {
+        height: 50px;
+    }
+
+    .toast-warn {
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        min-width: 500px;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        z-index: 999;
+
+        .toast-warn-header {
+            background-color: rgb(255, 159, 159);
+            color: rgb(55, 55, 55);
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+
+        .toast-warn-body {
+            background-color: #ececec;
+            color: rgb(74, 74, 74);
+            
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .form-btn {
+        width: 100%;
+        text-align: right;
+
+        Button {
+            width: 5em;
+            font-size: 1.3rem;
+            margin-right: 2em;
+        }
+    }
+}

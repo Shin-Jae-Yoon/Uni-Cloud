@@ -1,0 +1,42 @@
+.instanceCreatePage {
+    padding: 3em;
+
+    .white-box {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0.5px 0.5px 2px 1px #eee;
+    }
+
+    .semi-header {
+        background-color: rgba(46, 133, 167, 0.069);
+        text-align: left;
+        font-weight: bold;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.564);
+    }
+
+    .prograss-bar {
+        font-size: 1.3rem;
+    }
+
+    .bottom-box {
+        text-align: left;
+        margin-bottom: 3em;
+    }
+
+    .blank {
+        height: 50px;
+    }
+
+    .form-btn {
+        width: 100%;
+        text-align: right;
+
+        Button {
+            width: 5em;
+            font-size: 1.3rem;
+            margin-right: 2em;
+        }
+    }
+}

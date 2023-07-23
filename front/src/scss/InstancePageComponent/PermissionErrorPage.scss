@@ -1,0 +1,25 @@
+.permissionErrorPage {
+
+    padding: 3em;
+    text-align: left;
+    height: 100vh;
+
+    .white-box {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0.5px 0.5px 2px 1px #eee;
+    }
+
+    .semi-header {
+        background-color: rgba(255, 159, 159, 0.584);
+        color: rgb(55, 55, 55);
+        text-align: left;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .error-body {
+        font-size: 2rem;
+    }
+}
