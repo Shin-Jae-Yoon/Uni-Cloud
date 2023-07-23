@@ -10,6 +10,6 @@ public class DuplicatedEmail extends UniCloudException {
 
     @Override
     public int getStatusCode() {
-        return 400;
+        return 409;
     }
 }

@@ -41,12 +41,13 @@ function RegisterPage() {
             })
             .catch((error) => {
                 if (error.response && error.response.status === 400) {
-                    alert('이미 가입된 아이디입니다. 다른 아이디를 입력하세요.');
                     const { validation } = error.response.data;
                     const errorMessages = Object.values(validation).join('\n');
+                    alert(errorMessages);
                     setErrorMessage(errorMessages);
+                } else if (error.response && error.response.status === 409) {
+                    alert(error.response.data.message);
                 } else {
-                    console.log('Error:', error);
                     alert('회원가입 중 오류가 발생했습니다.');
                 }
             });
