@@ -1,0 +1,29 @@
+### 인스턴스 생성
+POST http://localhost:8080/api/v1/instance
+Content-Type: application/json
+
+{
+  "cloudId": "2"
+}
+
+### 인스턴스 회원 기준 조회
+GET http://localhost:8080/api/v1/instance
+
+### 인스턴스 수정 - 클라우드 변경
+PUT http://localhost:8080/api/v1/instance/1/cloud
+Content-Type: application/json
+
+{
+  "cloudId": 2
+}
+
+### 인스턴스 수정 - 상태 변경
+PUT http://localhost:8080/api/v1/instance/1/status
+Content-Type: application/json
+
+{
+  "status": "RUNNING"
+}
+
+### 인스턴스 제거
+DELETE http://localhost:8080/api/v1/instance/1
